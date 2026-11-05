@@ -15,7 +15,7 @@ from pathlib import Path
 CONFIG = {
     "PRODUCT": "Akka",
     "COMPANY": "Branch Out Labs",
-    "COMPANY_LEGAL": "Branch Out Labs Private Limited",
+    "COMPANY_LEGAL": "Branch Out Digital Labs LLP",
     "DOMAIN": "branchoutlabs.com",
     "EMAIL": "hello@branchoutlabs.com",
     "WA_NUMBER": "917892536292",          # WhatsApp, international format, digits only
