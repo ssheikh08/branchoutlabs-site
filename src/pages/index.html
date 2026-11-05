@@ -1,0 +1,205 @@
+<!--
+title: {{PRODUCT}} by {{COMPANY}} — Kannada homework help for Grade 3–6
+description: {{PRODUCT}} is an elder sister for Kannada homework: games, writing practice and weekly tests from the Karnataka state textbooks, for Bengaluru families who don't speak Kannada at home.
+layout: main
+path: /
+scripts: home.js
+-->
+<section class="hero">
+<div class="wrap">
+<div class="row">
+<div class="stack" style="gap:24px">
+<p class="eyebrow">For Grade 3–6 children in Bengaluru</p>
+<h1 class="h1">An <em>elder sister</em> for Kannada homework.</h1>
+<p class="lead">{{PRODUCT}} guides your child through their own Kannada textbook, step by step, with games and writing practice. Made for families who don't speak Kannada at home.</p>
+<div class="hero-cta">
+<a class="btn btn-primary" href="/contact/">Join our founding families</a>
+<span style="font-size:15px;color:var(--body)">Takes a minute · We reply on WhatsApp</span>
+</div>
+</div>
+<div>
+<div class="hero-art">
+<img src="/static/img/akka-chalkboard.webp" width="900" height="900" alt="{{PRODUCT}}, an illustrated elder sister in glasses and a teal kurta, pointing at a chalkboard">
+<div class="board" aria-hidden="true"><span class="a">ಅ ಆ ಇ</span><span class="b">ಕ ಖ ಗ</span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="scroll-cue">Scroll to try what your child does ↓</div>
+</section>
+
+<section class="section" aria-labelledby="s1">
+<div class="wrap row">
+<div class="stack">
+<p class="eyebrow">01 · Learning through play</p>
+<h2 class="h2" id="s1">Go on, <em>pop</em> a balloon.</h2>
+<p class="copy">This is a game from {{PRODUCT}}'s letter lessons. Letters that look alike sit side by side, so children learn to tell them apart, not just recognise them.</p>
+</div>
+<figure>
+<div class="panel teal" id="game">
+<div class="say">
+<img src="/static/img/akka-explaining.webp" alt="{{PRODUCT}}" width="64" height="64">
+<div class="bubble" role="status" aria-live="polite"><span class="kn" data-g="kn">ಅ ಹುಡುಕು!</span><span class="en" data-g="en">Find ಅ.</span></div>
+</div>
+<div class="balloons" data-g="balloons"></div>
+<div class="game-foot">
+<span class="count" data-g="count">0 of 3 found</span>
+<button class="btn btn-primary btn-sm" type="button" data-g="next" hidden>Next letter</button>
+</div>
+</div>
+<figcaption class="caption">Fig. 01 · In the app, {{PRODUCT}} says the sound out loud, and the child finds it.</figcaption>
+</figure>
+</div>
+</section>
+
+<section class="section" aria-labelledby="s2">
+<div class="wrap stack" style="gap:36px">
+<div class="stack" style="max-width:760px">
+<p class="eyebrow">02 · She guides, step by step</p>
+<h2 class="h2" id="s2">She explains <em>before</em> she asks.</h2>
+<p class="copy">Your child never has to guess what a task wants. Lift the cover on one letter lesson:</p>
+</div>
+<div class="stepper" id="lesson">
+<ol class="steps" data-l="steps"></ol>
+<div class="step-view">
+<div class="say">
+<img src="/static/img/akka-smile.webp" alt="{{PRODUCT}}" width="64" height="64" style="border-color:var(--cream)">
+<div class="bubble cream" aria-live="polite"><span class="kn" data-l="kn"></span><span class="en" data-l="en"></span></div>
+</div>
+<div class="step-big" aria-hidden="true"><span class="big" data-l="big"></span><span class="side" data-l="side"></span></div>
+<p class="copy" data-l="body"></p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" aria-labelledby="s3">
+<div class="wrap row rev">
+<figure>
+<div class="panel gold" id="spell">
+<div class="say">
+<img src="/static/img/akka-gentle.webp" alt="{{PRODUCT}}" width="64" height="64">
+<div class="bubble" role="status" aria-live="polite"><span class="kn" data-s="kn"></span><span class="en" data-s="en"></span></div>
+</div>
+<div class="center-col">
+<span class="hint">The word “house”, as your child wrote it:</span>
+<div class="letters"><span class="tile flag" data-s="first">ಯ</span><span class="tile">ನೆ</span></div>
+</div>
+<div class="center-col" data-s="choosing">
+<span class="hint">Which letter should it be?</span>
+<div class="choices" data-s="choices"></div>
+</div>
+<div class="center-col" data-s="fixed" hidden>
+<button class="btn btn-ghost btn-sm" type="button" data-s="reset" style="border-color:var(--ink);color:var(--ink)">Try again</button>
+</div>
+</div>
+<figcaption class="caption">Fig. 03 · In the app, your child rewrites just that letter by hand.</figcaption>
+</figure>
+<div class="stack">
+<p class="eyebrow">03 · Spelling</p>
+<h2 class="h2" id="s3">Fix <em>one letter</em>, not the whole word.</h2>
+<p class="copy">Your child writes on the screen and {{PRODUCT}} checks every letter. When something's off, she points to exactly that letter. Then the word goes into their notebook, so the practice carries over to paper.</p>
+</div>
+</div>
+</section>
+
+<section class="section" aria-labelledby="s4">
+<div class="wrap row">
+<div class="stack">
+<p class="eyebrow">04 · Ready for tests</p>
+<h2 class="h2" id="s4">Test day feels <em>familiar</em>.</h2>
+<p class="copy">A short test each week on what they practised, with written answers like school. {{PRODUCT}} holds the marks until the end, the way a real test works.</p>
+<div class="pills" role="group" aria-label="Test view" id="test-tabs">
+<button class="pill" type="button" aria-pressed="true" data-t="during">During the test</button>
+<button class="pill" type="button" aria-pressed="false" data-t="after">After the test</button>
+</div>
+</div>
+<div class="test-card" id="test">
+<div class="test-head"><span class="t">WEEKLY TEST · CHAPTER 4</span><span class="score" data-t="score">— / 4</span></div>
+<div data-t="rows" class="stack" style="gap:10px"></div>
+<span class="caption" data-t="note"></span>
+</div>
+</div>
+</section>
+
+<section class="band-teal" aria-labelledby="s5">
+<div class="wrap row">
+<div class="stack">
+<p class="eyebrow">05 · For you</p>
+<h2 class="h2" id="s5">See it all, <em>without reading</em> Kannada.</h2>
+<p class="copy" style="color:var(--ink)">What they practised, how it went, their notebook page and their test, in plain English. Tap a day.</p>
+</div>
+<figure>
+<div class="app-card" id="parent">
+<div class="pills teal" role="group" aria-label="Day" data-p="days"></div>
+<div class="split">
+<div class="items" data-p="items"></div>
+<div class="notebook"><span class="lbl">NOTEBOOK PAGE</span><div data-p="lines"></div></div>
+</div>
+</div>
+<figcaption class="caption" style="color:var(--teal-dark)">Fig. 05 · A sample week. The parent view is still being designed.</figcaption>
+</figure>
+</div>
+</section>
+
+<section class="section" aria-labelledby="s6" style="padding-top:96px">
+<div class="wrap stack" style="gap:36px">
+<div style="display:flex;flex-wrap:wrap;gap:24px 48px;align-items:flex-end;justify-content:space-between">
+<div class="stack" style="flex:1 1 520px;min-width:0">
+<p class="eyebrow gold">06 · For schools and tutoring centres</p>
+<h2 class="h2" id="s6">You assign the work. {{PRODUCT}} shows you <em>each child</em>.</h2>
+<p class="copy">Tutors spend their time teaching, not checking. Tap a child.</p>
+</div>
+<a class="btn btn-dark" href="/schools/">Run a pilot with us</a>
+</div>
+<figure>
+<div class="class-card" id="tutor">
+<ul class="kids" data-k="kids"></ul>
+<div class="kid-detail">
+<div class="top"><b data-k="name"></b><span data-k="assigned"></span></div>
+<div class="stats">
+<div class="stat k"><b data-k="knows"></b><span>Knows it</span></div>
+<div class="stat g"><b data-k="got"></b><span>Got there</span></div>
+<div class="stat n"><b data-k="notyet"></b><span>Not yet</span></div>
+</div>
+<dl class="dl">
+<dt>Help used</dt><dd data-k="help"></dd>
+<dt>Writing fixes</dt><dd data-k="fixes" style="font-family:var(--kn)"></dd>
+<dt>Last test</dt><dd data-k="test"></dd>
+</dl>
+</div>
+</div>
+<figcaption class="caption">Fig. 06 · Sample class with made-up children. The tutor view is still being designed.</figcaption>
+</figure>
+</div>
+</section>
+
+<section class="section" aria-labelledby="s7" style="padding-top:96px">
+<div class="narrow faq">
+<p class="eyebrow">07 · Fair questions</p>
+<h2 class="h2" id="s7" style="margin:12px 0 20px">Things parents <em>ask us</em>.</h2>
+<details open><summary>Do I need to know any Kannada?</summary><p>No. {{PRODUCT}} talks to your child in Kannada and English, and your view is in English.</p></details>
+<details><summary>Does it follow my child's textbook?</summary><p>{{PRODUCT}} is built on the Karnataka state Kannada textbooks for Grades 3–6, which many CBSE and ICSE schools in Bengaluru use. Tell us which book your child has. More boards are on the way.</p></details>
+<details><summary>Is it a replacement for school?</summary><p>No. It's practice at home for what they learn in class, from the same book.</p></details>
+<details><summary>What does it need?</summary><p>An Android tablet or phone with internet, a notebook and a pencil. iPhone and iPad are coming soon.</p></details>
+<details><summary>What does it cost?</summary><p>We're starting with a small group of founding families. Get in touch and we'll explain how it works.</p></details>
+<details><summary>What happens to my child's data?</summary><p>It's stored in India and used to teach your child. Read our <a href="/privacy/">privacy policy</a>, and you can <a href="/delete-account/">ask us to delete it</a> at any time.</p></details>
+<details><summary>Who's behind {{PRODUCT}}?</summary><p>{{PRODUCT}} is made by {{COMPANY}}, a small company in Bengaluru founded by Shoaib. It started with one child and one Kannada exam, and grew once he saw how many families were stuck the same way. Shoaib still checks every Kannada word {{PRODUCT}} teaches, and you can always <a href="https://wa.me/{{WA_NUMBER}}">talk to him on WhatsApp</a>.</p></details>
+</div>
+</section>
+
+<section style="padding:72px 0 96px">
+<div class="wrap">
+<div class="cta">
+<img src="/static/img/akka-smile.webp" alt="" width="128" height="128">
+<div class="txt">
+<h2 class="h2">Join our founding families.</h2>
+<p>We're starting with a small group of families in Bengaluru. Tell us about your child, and we'll get back to you.</p>
+</div>
+<div class="act">
+<a class="btn btn-light" href="/contact/">Get in touch</a>
+<a class="plain" href="https://wa.me/{{WA_NUMBER}}">or WhatsApp us</a>
+</div>
+</div>
+</div>
+</section>

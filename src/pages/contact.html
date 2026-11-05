@@ -1,0 +1,83 @@
+<!--
+title: Get in touch · {{PRODUCT}} by {{COMPANY}}
+description: Join our founding families or run a pilot at your school or tutoring centre. Message us on WhatsApp or by email.
+layout: main
+nav: contact
+path: /contact/
+scripts: contact.js
+-->
+<section style="padding:56px 0 96px">
+<div class="wrap" style="display:flex;flex-wrap:wrap;gap:48px;align-items:flex-start">
+<div class="stack" style="flex:999 1 560px;min-width:0;gap:28px">
+<div class="stack" style="gap:12px">
+<h1 class="h1" style="font-size:clamp(40px,5vw,60px)">Get in <em>touch</em></h1>
+<p class="lead">Tell us a little about yourself. Your message opens in WhatsApp or your email app, ready to send.</p>
+</div>
+
+<form class="form" id="contact-form" data-wa="{{WA_NUMBER}}" data-email="{{EMAIL}}" data-product="{{PRODUCT}}" novalidate>
+<fieldset>
+<legend>I am a</legend>
+<div class="pills teal" role="group" aria-label="I am a">
+<button class="pill" type="button" aria-pressed="true" data-role="parent">Parent</button>
+<button class="pill" type="button" aria-pressed="false" data-role="school">School</button>
+<button class="pill" type="button" aria-pressed="false" data-role="centre">Tutoring centre</button>
+</div>
+</fieldset>
+
+<div class="fields">
+<label class="field">Your name<input name="name" type="text" autocomplete="name" required></label>
+<label class="field">Phone<input name="phone" type="tel" autocomplete="tel" inputmode="tel"></label>
+</div>
+
+<div class="fields role-group" data-group="parent">
+<label class="field">Your child's grade
+<select name="grade"><option value="">Choose a grade</option><option>Grade 3</option><option>Grade 4</option><option>Grade 5</option><option>Grade 6</option><option>Other</option></select></label>
+<label class="field">School name<input name="school" type="text"></label>
+<label class="field">Area in Bengaluru<input name="area" type="text"></label>
+<label class="field">Which Kannada textbook?
+<select name="book"><option value="">Choose one</option><option>Karnataka state textbook (KTBS)</option><option>NCERT</option><option>Another book</option><option>Not sure</option></select></label>
+</div>
+
+<div class="fields role-group" data-group="school" hidden>
+<label class="field">Your role<input name="role" type="text" placeholder="e.g. Principal, Kannada coordinator"></label>
+<label class="field">School name<input name="schoolName" type="text"></label>
+<label class="field">Board
+<select name="board"><option value="">Choose one</option><option>CBSE</option><option>ICSE</option><option>State board</option><option>Other</option></select></label>
+<label class="field">Children who might benefit<input name="children" type="text" inputmode="numeric" placeholder="Roughly how many"></label>
+</div>
+
+<div class="fields role-group" data-group="centre" hidden>
+<label class="field">Centre name<input name="centre" type="text"></label>
+<label class="field">Area in Bengaluru<input name="centreArea" type="text"></label>
+<label class="field">Students learning Kannada<input name="students" type="text" inputmode="numeric" placeholder="Roughly how many"></label>
+</div>
+
+<label class="field">Anything else? (optional)<textarea name="message" rows="3"></textarea></label>
+
+<p class="note" data-group-note="parent">We don't ask for your child's name. We only use these details to reply to you. See our <a href="/privacy/">privacy policy</a>.</p>
+<p class="note" role="alert" id="form-error" hidden style="color:var(--bad);font-weight:700">Please add your name.</p>
+
+<div style="display:flex;flex-wrap:wrap;gap:12px">
+<button class="btn btn-primary" type="button" data-send="wa">
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.7-5.2A8.4 8.4 0 1 1 21 11.5Z"/></svg>
+Send on WhatsApp</button>
+<button class="btn btn-ghost" type="button" data-send="email">
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+Send by email</button>
+</div>
+</form>
+</div>
+
+<aside class="side" style="flex:1 1 300px;min-width:0">
+<div class="box">
+<h2>Prefer to message directly?</h2>
+<a class="btn btn-primary" href="https://wa.me/{{WA_NUMBER}}">WhatsApp us</a>
+<span style="font-size:15px;color:var(--body)">{{WA_DISPLAY}}</span>
+</div>
+<div class="box">
+<h2>Email</h2>
+<a href="mailto:{{EMAIL}}" style="font-size:17px;font-weight:700">{{EMAIL}}</a>
+</div>
+</aside>
+</div>
+</section>
